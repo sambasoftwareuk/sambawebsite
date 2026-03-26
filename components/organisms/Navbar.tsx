@@ -1,9 +1,9 @@
 'use client';
 
 import { useState } from 'react';
-import { Button } from '@/components/atoms/Button';
-import { Icon } from '@/components/atoms/Icon';
-import { NavLink } from '@/components/molecules/NavLink';
+import { Button } from '../atoms/Button';
+import { Icon } from '../atoms/Icon';
+import { NavLink } from '../molecules/NavLink';
 
 const links = ['Home', 'Services', 'Work', 'About', 'Contact'];
 

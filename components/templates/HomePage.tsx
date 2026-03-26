@@ -1,10 +1,10 @@
-import { Icon } from '@/components/atoms/Icon';
-import { ProcessStep } from '@/components/molecules/ProcessStep';
-import { ProjectCard } from '@/components/molecules/ProjectCard';
-import { ServiceCard } from '@/components/molecules/ServiceCard';
-import { Footer } from '@/components/organisms/Footer';
-import { HeroSection } from '@/components/organisms/HeroSection';
-import { Navbar } from '@/components/organisms/Navbar';
+import { Icon } from '../atoms/Icon';
+import { ProcessStep } from '../molecules/ProcessStep';
+import { ProjectCard } from '../molecules/ProjectCard';
+import { ServiceCard } from '../molecules/ServiceCard';
+import { Footer } from '../organisms/Footer';
+import { HeroSection } from '../organisms/HeroSection';
+import { Navbar } from '../organisms/Navbar';
 
 const processSteps = [
   ['Understand', 'We dive deep into your business model and goals.'],

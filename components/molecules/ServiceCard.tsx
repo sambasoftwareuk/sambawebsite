@@ -1,4 +1,4 @@
-import { Icon } from '@/components/atoms/Icon';
+import { Icon } from '../atoms/Icon';
 
 type ServiceCardProps = {
   icon: 'code' | 'shop' | 'bolt';

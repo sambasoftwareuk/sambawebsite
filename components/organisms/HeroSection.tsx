@@ -1,6 +1,6 @@
-import { Badge } from '@/components/atoms/Badge';
-import { Button } from '@/components/atoms/Button';
-import { Icon } from '@/components/atoms/Icon';
+import { Badge } from '../atoms/Badge';
+import { Button } from '../atoms/Button';
+import { Icon } from '../atoms/Icon';
 
 export function HeroSection() {
   return (
