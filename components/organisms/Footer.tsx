@@ -1,4 +1,12 @@
 export function Footer() {
+  const companyLinks = [
+    { label: 'Home', href: '/' },
+    { label: 'Services', href: '/services' },
+    { label: 'Work', href: '#' },
+    { label: 'About', href: '#' },
+    { label: 'Contact', href: '#' }
+  ] as const;
+
   return (
     <footer className="w-full bg-slate-50 px-6 py-12">
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 md:grid-cols-3">
@@ -11,9 +19,9 @@ export function Footer() {
         <div className="grid grid-cols-2 gap-4">
           <div className="flex flex-col gap-3">
             <h5 className="mb-2 text-sm font-bold text-slate-900">Company</h5>
-            {['Home', 'Services', 'Work', 'About', 'Contact'].map((item) => (
-              <a key={item} className="text-sm text-slate-500 transition-all hover:text-indigo-600" href="#">
-                {item}
+            {companyLinks.map((item) => (
+              <a key={item.label} className="text-sm text-slate-500 transition-all hover:text-indigo-600" href={item.href}>
+                {item.label}
               </a>
             ))}
           </div>
