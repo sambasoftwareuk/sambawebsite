@@ -9,8 +9,12 @@ type PortfolioSectionProps = {
   showViewAll?: boolean;
 };
 
-export function PortfolioSection({ limit, showViewAll = false }: PortfolioSectionProps) {
-  const visibleProjects = typeof limit === "number" ? projects.slice(0, limit) : projects;
+export function PortfolioSection({
+  limit,
+  showViewAll = false,
+}: PortfolioSectionProps) {
+  const visibleProjects =
+    typeof limit === "number" ? projects.slice(0, limit) : projects;
 
   return (
     <section id="portfolio" className="py-16 sm:py-20">
@@ -20,7 +24,7 @@ export function PortfolioSection({ limit, showViewAll = false }: PortfolioSectio
           title="Selected projects built for real clients."
           description="A focused showcase of our recent work across nonprofit, e-commerce, and corporate websites."
         />
-        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {visibleProjects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}
